@@ -3,638 +3,623 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>读·见·行 | 书籍深度解读 | Read Sight Act</title>
-  <meta name="description" content="读·见·行（Read Sight Act）—— 用视觉信息图解读全球经典书籍。涵盖哲学、心理学、财富、历史、文学、自我提升等领域。每期视频提炼行动启示，从阅读到行动。人类简史、穷查理宝典、活着、被讨厌的勇气、刻意练习等经典书籍深度解读。">
-  <meta name="keywords" content="读见行,书籍解读,深度解读,读书分享,好书推荐,人类简史,穷查理宝典,被讨厌的勇气,刻意练习,活着,哲学,心理学,财富思维,历史人文,自我提升,ReadSightAct">
-  <meta property="og:title" content="读·见·行 | 书籍深度解读 | Read Sight Act">
-  <meta property="og:description" content="用视觉信息图解读全球经典书籍。从阅读到行动。">
+  <title>读·见·行 | 书籍深度解读 · 从阅读到行动 | Read Sight Act</title>
+  <meta name="description" content="读·见·行（Read Sight Act）—— 用视觉信息图解读全球经典书籍。涵盖哲学、心理学、财富思维、历史人文、自我提升、文学经典等领域。人类简史、穷查理宝典、被讨厌的勇气、刻意练习、悉达多、枪炮病菌与钢铁等80+本经典书籍深度解读。每期提炼行动启示。">
+  <meta name="keywords" content="读见行,读·见·行,ReadSightAct,书籍解读,深度解读,读书分享,好书推荐,人类简史,穷查理宝典,被讨厌的勇气,刻意练习,活着余华,思考快与慢,反脆弱,悉达多,枪炮病菌与钢铁,道德经,哲学,心理学,财富思维,历史人文,自我提升,AI教程,OpenClaw">
+  <meta property="og:title" content="读·见·行 | 书籍深度解读 · 从阅读到行动">
+  <meta property="og:description" content="用视觉信息图解读全球经典。历史、哲学、科学、人文——不止于理解，更关心改变。">
+  <meta property="og:image" content="https://yt3.ggpht.com/YXmLatb8XvZRTMgpGUi69w1N4KWrQHAzXbzy5oB2D1zpdqzY8T_kIPnwcHuEb6dhIATPHoqQ0Q=s800-c-k-c0x00ffffff-no-rj">
   <meta property="og:url" content="https://readsightaction-dev.github.io/readsightact/">
   <meta property="og:type" content="website">
   <link rel="canonical" href="https://readsightaction-dev.github.io/readsightact/">
+  <link rel="icon" type="image/png" href="https://yt3.ggpht.com/YXmLatb8XvZRTMgpGUi69w1N4KWrQHAzXbzy5oB2D1zpdqzY8T_kIPnwcHuEb6dhIATPHoqQ0Q=s88-c-k-c0x00ffffff-no-rj">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --teal-deep: #0a1f2b;
+      --teal-mid: #0f3044;
+      --teal-light: #164357;
+      --gold: #c9a84c;
+      --gold-light: #e8d08c;
+      --gold-glow: #c9a84c40;
+      --red-seal: #b33a3a;
+      --text-primary: #e8e0d0;
+      --text-secondary: #8a9ba8;
+      --text-muted: #5a6f7d;
+      --card-bg: #0d2636;
+      --card-hover: #122f42;
+    }
+
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #0f0f0f; color: #fff; }
-    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); padding: 60px 20px; text-align: center; }
-    header h1 { font-size: 2.8rem; font-weight: 700; margin-bottom: 12px; }
-    header h1 span { color: #e94560; }
-    header p { font-size: 1.1rem; color: #aaa; max-width: 600px; margin: 0 auto 20px; line-height: 1.6; }
-    .channel-link { display: inline-block; background: #e94560; color: #fff; padding: 12px 28px; border-radius: 24px; text-decoration: none; font-weight: 600; font-size: 1rem; transition: background 0.2s; }
-    .channel-link:hover { background: #c73652; }
-    .stats { display: flex; justify-content: center; gap: 40px; padding: 30px 20px; background: #161616; flex-wrap: wrap; }
-    .stat { text-align: center; }
-    .stat .num { font-size: 2rem; font-weight: 700; color: #e94560; }
-    .stat .label { font-size: 0.85rem; color: #888; margin-top: 4px; }
-    .section { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
-    .section h2 { font-size: 1.6rem; margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid #e94560; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
-    .card { background: #1a1a1a; border-radius: 12px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; text-decoration: none; color: inherit; display: block; }
-    .card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(233,69,96,0.2); }
-    .card img { width: 100%; aspect-ratio: 16/9; object-fit: cover; }
-    .card-body { padding: 14px; }
-    .card-title { font-size: 0.9rem; font-weight: 600; line-height: 1.4; margin-bottom: 8px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-    .card-meta { font-size: 0.78rem; color: #888; display: flex; justify-content: space-between; }
-    .views { color: #e94560; }
-    footer { text-align: center; padding: 40px 20px; background: #161616; color: #666; font-size: 0.85rem; }
-    footer a { color: #e94560; text-decoration: none; }
+
+    body {
+      font-family: 'Noto Serif SC', serif;
+      background: var(--teal-deep);
+      color: var(--text-primary);
+      overflow-x: hidden;
+    }
+
+    /* ═══════════ HERO ═══════════ */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 30%, rgba(201,168,76,0.08) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 40% at 30% 70%, rgba(22,67,87,0.4) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 40% at 70% 80%, rgba(15,48,68,0.5) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    /* Ink wash mountain silhouettes */
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 300px;
+      background:
+        linear-gradient(170deg, transparent 40%, rgba(10,31,43,0.3) 60%, rgba(10,31,43,0.8) 80%, var(--teal-deep) 100%);
+      pointer-events: none;
+    }
+
+    .hero-banner {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://yt3.googleusercontent.com/Ed0KOt2S5f8SvcLUKvLOT-6V4ayrKsHAipH765cCgV7nxrRLzkF9vj1A66KA7Axo0OhZNsm5');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.15;
+      filter: saturate(0.6);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 40px 24px;
+    }
+
+    .logo-img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 3px solid var(--gold);
+      box-shadow: 0 0 40px var(--gold-glow), 0 0 80px rgba(201,168,76,0.1);
+      margin-bottom: 32px;
+      animation: fadeInScale 1.2s ease-out;
+    }
+
+    .hero-title {
+      font-family: 'ZCOOL XiaoWei', serif;
+      font-size: clamp(3rem, 8vw, 5.5rem);
+      font-weight: 400;
+      letter-spacing: 0.15em;
+      background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 40%, #a88532 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 8px;
+      animation: fadeInUp 1s ease-out 0.3s both;
+    }
+
+    .hero-dots {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin: 16px 0 24px;
+      animation: fadeInUp 1s ease-out 0.5s both;
+    }
+
+    .hero-dot {
+      width: 6px; height: 6px;
+      background: var(--gold);
+      border-radius: 50%;
+      box-shadow: 0 0 12px var(--gold-glow);
+    }
+
+    .hero-tagline {
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+      color: var(--text-secondary);
+      letter-spacing: 0.3em;
+      margin-bottom: 12px;
+      animation: fadeInUp 1s ease-out 0.6s both;
+    }
+
+    .hero-desc {
+      font-size: clamp(0.85rem, 1.8vw, 1rem);
+      color: var(--text-muted);
+      max-width: 560px;
+      line-height: 1.8;
+      margin: 0 auto 40px;
+      animation: fadeInUp 1s ease-out 0.7s both;
+    }
+
+    .subscribe-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, var(--gold) 0%, #a88532 100%);
+      color: var(--teal-deep);
+      padding: 16px 40px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: 0.1em;
+      transition: all 0.3s;
+      box-shadow: 0 4px 20px var(--gold-glow);
+      animation: fadeInUp 1s ease-out 0.9s both;
+    }
+
+    .subscribe-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(201,168,76,0.4);
+    }
+
+    .subscribe-btn svg { width: 20px; height: 20px; }
+
+    /* ═══════════ STATS ═══════════ */
+    .stats-bar {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      padding: 48px 24px;
+      background: linear-gradient(180deg, var(--teal-deep) 0%, var(--teal-mid) 100%);
+      border-top: 1px solid rgba(201,168,76,0.1);
+      border-bottom: 1px solid rgba(201,168,76,0.1);
+      flex-wrap: wrap;
+    }
+
+    .stat-item {
+      text-align: center;
+      min-width: 100px;
+    }
+
+    .stat-num {
+      font-family: 'ZCOOL XiaoWei', serif;
+      font-size: 2.6rem;
+      background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      letter-spacing: 0.15em;
+      margin-top: 6px;
+    }
+
+    /* ═══════════ SECTIONS ═══════════ */
+    .section {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 64px 24px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+
+    .section-icon {
+      font-size: 1.8rem;
+    }
+
+    .section-title {
+      font-family: 'ZCOOL XiaoWei', serif;
+      font-size: 1.8rem;
+      color: var(--gold-light);
+      letter-spacing: 0.1em;
+    }
+
+    .section-line {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(201,168,76,0.3) 0%, transparent 100%);
+    }
+
+    /* ═══════════ FILTER TABS ═══════════ */
+    .filter-bar {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 32px;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      padding: 8px 20px;
+      border: 1px solid rgba(201,168,76,0.2);
+      border-radius: 2px;
+      background: transparent;
+      color: var(--text-secondary);
+      font-family: 'Noto Serif SC', serif;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      letter-spacing: 0.05em;
+    }
+
+    .filter-btn:hover { border-color: var(--gold); color: var(--gold-light); }
+    .filter-btn.active {
+      background: linear-gradient(135deg, rgba(201,168,76,0.15) 0%, rgba(201,168,76,0.05) 100%);
+      border-color: var(--gold);
+      color: var(--gold-light);
+    }
+
+    /* ═══════════ VIDEO GRID ═══════════ */
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+      gap: 24px;
+    }
+
+    .video-card {
+      background: var(--card-bg);
+      border: 1px solid rgba(201,168,76,0.06);
+      border-radius: 4px;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      position: relative;
+    }
+
+    .video-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      opacity: 0;
+      transition: opacity 0.35s;
+    }
+
+    .video-card:hover {
+      transform: translateY(-6px);
+      background: var(--card-hover);
+      border-color: rgba(201,168,76,0.15);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.4), 0 0 24px var(--gold-glow);
+    }
+
+    .video-card:hover::after { opacity: 1; }
+
+    .video-thumb {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .video-thumb img {
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      transition: transform 0.5s;
+    }
+
+    .video-card:hover .video-thumb img { transform: scale(1.05); }
+
+    .video-thumb .play-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(10,31,43,0.5);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .video-card:hover .play-overlay { opacity: 1; }
+
+    .play-icon {
+      width: 48px; height: 48px;
+      border: 2px solid var(--gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .play-icon::after {
+      content: '';
+      width: 0; height: 0;
+      border-style: solid;
+      border-width: 8px 0 8px 14px;
+      border-color: transparent transparent transparent var(--gold);
+      margin-left: 3px;
+    }
+
+    .video-info {
+      padding: 16px;
+    }
+
+    .video-title {
+      font-size: 0.88rem;
+      font-weight: 600;
+      line-height: 1.6;
+      color: var(--text-primary);
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin-bottom: 12px;
+    }
+
+    .video-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.75rem;
+    }
+
+    .video-date { color: var(--text-muted); }
+
+    .video-views {
+      color: var(--gold);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .video-views::before {
+      content: '▶';
+      font-size: 0.6rem;
+    }
+
+    /* ═══════════ SEAL DIVIDER ═══════════ */
+    .seal-divider {
+      text-align: center;
+      padding: 40px 0;
+    }
+
+    .seal-stamp {
+      display: inline-block;
+      width: 48px; height: 48px;
+      border: 2px solid var(--red-seal);
+      border-radius: 4px;
+      color: var(--red-seal);
+      font-family: 'ZCOOL XiaoWei', serif;
+      font-size: 1.4rem;
+      line-height: 44px;
+      opacity: 0.6;
+      transform: rotate(-8deg);
+    }
+
+    /* ═══════════ FOOTER ═══════════ */
+    footer {
+      background: linear-gradient(180deg, var(--teal-mid) 0%, var(--teal-deep) 100%);
+      border-top: 1px solid rgba(201,168,76,0.08);
+      padding: 48px 24px;
+      text-align: center;
+    }
+
+    .footer-brand {
+      font-family: 'ZCOOL XiaoWei', serif;
+      font-size: 1.4rem;
+      color: var(--gold);
+      letter-spacing: 0.15em;
+      margin-bottom: 12px;
+    }
+
+    .footer-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      max-width: 400px;
+      margin: 0 auto 20px;
+      line-height: 1.6;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.82rem;
+      letter-spacing: 0.05em;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--gold); }
+
+    .footer-copy {
+      margin-top: 28px;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      opacity: 0.6;
+    }
+
+    /* ═══════════ ANIMATIONS ═══════════ */
+    @keyframes fadeInScale {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ═══════════ RESPONSIVE ═══════════ */
+    @media (max-width: 640px) {
+      .stats-bar { gap: 28px; padding: 32px 16px; }
+      .stat-num { font-size: 2rem; }
+      .video-grid { grid-template-columns: 1fr; }
+      .hero { min-height: 90vh; }
+      .logo-img { width: 100px; height: 100px; }
+      .filter-bar { gap: 6px; }
+      .filter-btn { padding: 6px 14px; font-size: 0.78rem; }
+    }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>读<span>·</span>见<span>·</span>行</h1>
-  <p>读是起点，见是过程，行是目的。用视觉信息图解读全球经典——历史、哲学、科学、人文。每期提炼「行动启示」，从阅读到行动。</p>
-  <a class="channel-link" href="https://www.youtube.com/@readsightact?sub_confirmation=1" target="_blank" rel="noopener">▶ 订阅 YouTube 频道</a>
-</header>
-
-<div class="stats">
-  <div class="stat"><div class="num">74</div><div class="label">书籍解读</div></div>
-  <div class="stat"><div class="num">7</div><div class="label">AI 教程</div></div>
-  <div class="stat"><div class="num">81</div><div class="label">视频总数</div></div>
-</div>
-
-<div class="section">
-  <h2>📚 书籍深度解读</h2>
-  <div class="grid">
-    <a class="card" href="https://www.youtube.com/watch?v=ikLPdaFI80U" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/ikLPdaFI80U/mqdefault.jpg" alt="【东京】极致的政治控制术，意外催生了江户空前的财富与繁华。｜斯蒂芬·曼斯菲尔德" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【东京】极致的政治控制术，意外催生了江户空前的财富与繁华。｜斯蒂芬·曼斯菲尔德</div>
-        <div class="card-meta"><span>2026-04-02</span><span class="views">▶ 0</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=XW7GVGxn0Uc" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/XW7GVGxn0Uc/mqdefault.jpg" alt="移民危机→美欧分裂→身份瓦解：3本书看懂欧洲的裂变｜读·见·行" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">移民危机→美欧分裂→身份瓦解：3本书看懂欧洲的裂变｜读·见·行</div>
-        <div class="card-meta"><span>2026-04-02</span><span class="views">▶ 1</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=UvpcIqhQkBo" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/UvpcIqhQkBo/mqdefault.jpg" alt="【低利率时代】泡沫不是因为人们失去理智，而是因为他们太理智了。｜理查德·邓肯" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【低利率时代】泡沫不是因为人们失去理智，而是因为他们太理智了。｜理查德·邓肯</div>
-        <div class="card-meta"><span>2026-04-01</span><span class="views">▶ 2</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=LOIrPch1z-Q" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/LOIrPch1z-Q/mqdefault.jpg" alt="打破思维牢笼→放下执念→回到当下：3本书找到心安之所｜读·见·行" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">打破思维牢笼→放下执念→回到当下：3本书找到心安之所｜读·见·行</div>
-        <div class="card-meta"><span>2026-04-01</span><span class="views">▶ 3</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=H7Dv2EVJuyo" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/H7Dv2EVJuyo/mqdefault.jpg" alt="【超越巴菲特的伯克希尔】深度解读｜劳伦斯·A.坎宁安" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【超越巴菲特的伯克希尔】深度解读｜劳伦斯·A.坎宁安</div>
-        <div class="card-meta"><span>2026-03-31</span><span class="views">▶ 15</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=_MMARVMEAFM" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/_MMARVMEAFM/mqdefault.jpg" alt="找到方向→刻意练习→突破瓶颈：自我精进方法论｜读·见·行" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">找到方向→刻意练习→突破瓶颈：自我精进方法论｜读·见·行</div>
-        <div class="card-meta"><span>2026-03-31</span><span class="views">▶ 1</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=k-xW-okyTAE" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/k-xW-okyTAE/mqdefault.jpg" alt="【财富方程式】深度解读｜斯科特·加洛韦" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【财富方程式】深度解读｜斯科特·加洛韦</div>
-        <div class="card-meta"><span>2026-03-30</span><span class="views">▶ 3</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=-kUJFSK74eI" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/-kUJFSK74eI/mqdefault.jpg" alt="逆商→穿越风暴→反脆弱：3本书教你在混乱中获益｜读·见·行" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">逆商→穿越风暴→反脆弱：3本书教你在混乱中获益｜读·见·行</div>
-        <div class="card-meta"><span>2026-03-30</span><span class="views">▶ 1</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=Mz3DTgxCL58" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/Mz3DTgxCL58/mqdefault.jpg" alt="【源代码：比尔盖茨的首部自传】抛开首富的财富滤镜，去认识一个有血有肉的极客。｜比尔·盖茨" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【源代码：比尔盖茨的首部自传】抛开首富的财富滤镜，去认识一个有血有肉的极客。｜比尔·盖茨</div>
-        <div class="card-meta"><span>2026-03-29</span><span class="views">▶ 0</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=sdwob2EKjz4" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/sdwob2EKjz4/mqdefault.jpg" alt="道德经→儒学→文化精神：中国思想三千年的源与流｜读·见·行" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">道德经→儒学→文化精神：中国思想三千年的源与流｜读·见·行</div>
-        <div class="card-meta"><span>2026-03-29</span><span class="views">▶ 3</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=WBlxEg-DN0Q" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/WBlxEg-DN0Q/mqdefault.jpg" alt="【思考，快与慢】深度解读｜丹尼尔·卡尼曼（Daniel Kahneman）" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【思考，快与慢】深度解读｜丹尼尔·卡尼曼（Daniel Kahneman）</div>
-        <div class="card-meta"><span>2026-03-28</span><span class="views">▶ 2</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=LHPhi61ieNY" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/LHPhi61ieNY/mqdefault.jpg" alt="经济→文化→个体：3本书拆解日本社会的深层逻辑｜读·见·行" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">经济→文化→个体：3本书拆解日本社会的深层逻辑｜读·见·行</div>
-        <div class="card-meta"><span>2026-03-28</span><span class="views">▶ 10</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=GvanCP0gMNE" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/GvanCP0gMNE/mqdefault.jpg" alt="【为什么伟大不能被计划】深度解读｜肯尼斯·斯坦利" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【为什么伟大不能被计划】深度解读｜肯尼斯·斯坦利</div>
-        <div class="card-meta"><span>2026-03-27</span><span class="views">▶ 13</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=a1yXb9LRNsk" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/a1yXb9LRNsk/mqdefault.jpg" alt="芒格+卡尼曼+豪泽尔：3本书建立财富底层思维｜读·见·行" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">芒格+卡尼曼+豪泽尔：3本书建立财富底层思维｜读·见·行</div>
-        <div class="card-meta"><span>2026-03-27</span><span class="views">▶ 1</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=UGV6kjihgtU" target="_blank" rel="noopener">
-      <img src="https://i9.ytimg.com/vi/UGV6kjihgtU/mqdefault.jpg?sqp=CIDnvc4G&rs=AOn4CLC3o0G-O36n4sTwDIuWKSeSm8jqGg" alt="【法律的悖论】深度解读｜罗翔" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【法律的悖论】深度解读｜罗翔</div>
-        <div class="card-meta"><span>2026-03-27</span><span class="views">▶ 0</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=tlG5FXn2yzw" target="_blank" rel="noopener">
-      <img src="https://i9.ytimg.com/vi/tlG5FXn2yzw/mqdefault.jpg?sqp=CIDnvc4G&rs=AOn4CLA6sMslf1jb914VnicOEopYl8cJ6Q" alt="【论自由】我们往往被伟大的观念塑造，却不知其真正的源头。｜约翰·斯图尔特·密尔" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【论自由】我们往往被伟大的观念塑造，却不知其真正的源头。｜约翰·斯图尔特·密尔</div>
-        <div class="card-meta"><span>2026-03-27</span><span class="views">▶ 0</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=NEgFdPCq7vE" target="_blank" rel="noopener">
-      <img src="https://i9.ytimg.com/vi/NEgFdPCq7vE/mqdefault.jpg?sqp=CIDnvc4G&rs=AOn4CLBv_iZZ1n1YwYgZxxEK0DYvHoHjqg" alt="【道德形而上学原理】人数众多的选择，并不等同于绝对正确的道德标尺。｜伊曼努尔·康德" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【道德形而上学原理】人数众多的选择，并不等同于绝对正确的道德标尺。｜伊曼努尔·康德</div>
-        <div class="card-meta"><span>2026-03-27</span><span class="views">▶ 0</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=DrY0ITxieBw" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/DrY0ITxieBw/mqdefault.jpg" alt="【一如既往】预言家的唯一秘诀就是多做预言，然后删掉猜错的。｜摩根·豪泽尔" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【一如既往】预言家的唯一秘诀就是多做预言，然后删掉猜错的。｜摩根·豪泽尔</div>
-        <div class="card-meta"><span>2026-03-26</span><span class="views">▶ 6</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=f2onqDatGws" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/f2onqDatGws/mqdefault.jpg" alt="达芬奇→爱因斯坦→乔布斯：艾萨克森笔下天才的共同密码｜读·见·行" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">达芬奇→爱因斯坦→乔布斯：艾萨克森笔下天才的共同密码｜读·见·行</div>
-        <div class="card-meta"><span>2026-03-26</span><span class="views">▶ 2</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=xlMO1Ta_ZOo" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/xlMO1Ta_ZOo/mqdefault.jpg" alt="【史蒂夫·乔布斯传】深度解读｜沃尔特·艾萨克森" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【史蒂夫·乔布斯传】深度解读｜沃尔特·艾萨克森</div>
-        <div class="card-meta"><span>2026-03-25</span><span class="views">▶ 2</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=bz2eDy2RpQ4" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/bz2eDy2RpQ4/mqdefault.jpg" alt="人生该追求什么？毛姆和黑塞给出了三种截然不同的答案｜读·见·行" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">人生该追求什么？毛姆和黑塞给出了三种截然不同的答案｜读·见·行</div>
-        <div class="card-meta"><span>2026-03-25</span><span class="views">▶ 1</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=vjdqeb6b6CI" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/vjdqeb6b6CI/mqdefault.jpg" alt="【能力陷阱】你目前能想到的最好未来，其实限制了你的无限可能。｜埃米尼亚·伊贝拉" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【能力陷阱】你目前能想到的最好未来，其实限制了你的无限可能。｜埃米尼亚·伊贝拉</div>
-        <div class="card-meta"><span>2026-03-24</span><span class="views">▶ 1</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=0YlhUkbB3ic" target="_blank" rel="noopener">
-      <img src="https://i9.ytimg.com/vi/0YlhUkbB3ic/mqdefault.jpg?sqp=CIDnvc4G&rs=AOn4CLA4A_VjdaBsogQtrbyGHg6hI2rlbg" alt="枪炮病菌钢铁+社会契约论+有限无限游戏：文明碰撞三部曲｜读·见·行" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">枪炮病菌钢铁+社会契约论+有限无限游戏：文明碰撞三部曲｜读·见·行</div>
-        <div class="card-meta"><span>2026-03-24</span><span class="views">▶ 0</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=l8d7RtsbVKE" target="_blank" rel="noopener">
-      <img src="https://i9.ytimg.com/vi/l8d7RtsbVKE/mqdefault.jpg?sqp=CIDnvc4G&rs=AOn4CLBru3vQFKWex5L597t7-J7f2sik0A" alt="大脑的bug→好奇心的秘密→世界观的崩塌：认知升级三部曲｜读·见·行" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">大脑的bug→好奇心的秘密→世界观的崩塌：认知升级三部曲｜读·见·行</div>
-        <div class="card-meta"><span>2026-03-24</span><span class="views">▶ 0</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=CCmoDofumiw" target="_blank" rel="noopener">
-      <img src="https://i9.ytimg.com/vi/CCmoDofumiw/mqdefault.jpg?sqp=CIDnvc4G&rs=AOn4CLBAjANjXdl_8ky-VqU0lyKk93UbPw" alt="财富方程式+伟大不能被计划+伯克希尔：财富创造的三重密码｜读·见·行" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">财富方程式+伟大不能被计划+伯克希尔：财富创造的三重密码｜读·见·行</div>
-        <div class="card-meta"><span>2026-03-24</span><span class="views">▶ 0</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=u1BfJY2Mdhk" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/u1BfJY2Mdhk/mqdefault.jpg" alt="从被讨厌到幸福：阿德勒勇气三部曲教你活出自由人生｜读·见·行" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">从被讨厌到幸福：阿德勒勇气三部曲教你活出自由人生｜读·见·行</div>
-        <div class="card-meta"><span>2026-03-24</span><span class="views">▶ 4</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=9ElBsBEJumI" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/9ElBsBEJumI/mqdefault.jpg" alt="【有限与无限的游戏】有限游戏在界限内玩，以取胜和终结为唯一目标。｜詹姆斯·卡斯" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【有限与无限的游戏】有限游戏在界限内玩，以取胜和终结为唯一目标。｜詹姆斯·卡斯</div>
-        <div class="card-meta"><span>2026-03-23</span><span class="views">▶ 2</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=xuWA3dk1GoI" target="_blank" rel="noopener">
-      <img src="https://i9.ytimg.com/vi/xuWA3dk1GoI/mqdefault.jpg?sqp=CIDnvc4G&rs=AOn4CLBrFN5B9kD49fPvfZ7ZC6QCgZgKMw" alt="【随他们去】深度解读｜梅尔·罗宾斯" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【随他们去】深度解读｜梅尔·罗宾斯</div>
-        <div class="card-meta"><span>2026-03-23</span><span class="views">▶ 0</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=wz5PlQ8ybQw" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/wz5PlQ8ybQw/mqdefault.jpg" alt="从虚构故事到AI算法：谁在真正统治人类？— 赫拉利三部曲解读｜读·见·行" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">从虚构故事到AI算法：谁在真正统治人类？— 赫拉利三部曲解读｜读·见·行</div>
-        <div class="card-meta"><span>2026-03-23</span><span class="views">▶ 108</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=OYRZZmmfbJc" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/OYRZZmmfbJc/mqdefault.jpg" alt="【我们终将穿越风暴】深度解读｜马丁·塞利格曼" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【我们终将穿越风暴】深度解读｜马丁·塞利格曼</div>
-        <div class="card-meta"><span>2026-03-22</span><span class="views">▶ 3</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=myipwbj_oyY" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/myipwbj_oyY/mqdefault.jpg" alt="【思维的囚徒】深度解读｜亚历克斯·佩塔克斯" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【思维的囚徒】深度解读｜亚历克斯·佩塔克斯</div>
-        <div class="card-meta"><span>2026-03-21</span><span class="views">▶ 8</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=io_Cg6gyzww" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/io_Cg6gyzww/mqdefault.jpg" alt="【反脆弱】反脆弱不是坚如磐石，而是触底反弹、愈挫愈勇。｜纳西姆·尼古拉斯·塔勒布" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【反脆弱】反脆弱不是坚如磐石，而是触底反弹、愈挫愈勇。｜纳西姆·尼古拉斯·塔勒布</div>
-        <div class="card-meta"><span>2026-03-20</span><span class="views">▶ 1</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=LnFJPlqZa_k" target="_blank" rel="noopener">
-      <img src="https://i9.ytimg.com/vi/LnFJPlqZa_k/mqdefault.jpg?sqp=CIDnvc4G&rs=AOn4CLBtk1lJBvCV9RF0jjUrw5zrk1OLCA" alt="【厌女】深度解读｜上野千鹤子" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【厌女】深度解读｜上野千鹤子</div>
-        <div class="card-meta"><span>2026-03-20</span><span class="views">▶ 0</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=jRaRlVA3ynI" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/jRaRlVA3ynI/mqdefault.jpg" alt="【刻意练习】深度解读｜安德斯·艾利克森" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【刻意练习】深度解读｜安德斯·艾利克森</div>
-        <div class="card-meta"><span>2026-03-19</span><span class="views">▶ 17</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=iAnoCYZVRUc" target="_blank" rel="noopener">
-      <img src="https://i9.ytimg.com/vi/iAnoCYZVRUc/mqdefault.jpg?sqp=CIDnvc4G&rs=AOn4CLAEDrL_8uWvRYqaUcE78h2I7EwAMg" alt="【我还能看到多少次满月升起】平凡的轨道永远无法抵达不凡的终点。｜坂本龙一" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【我还能看到多少次满月升起】平凡的轨道永远无法抵达不凡的终点。｜坂本龙一</div>
-        <div class="card-meta"><span>2026-03-19</span><span class="views">▶ 0</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=MBhCWppmuI8" target="_blank" rel="noopener">
-      <img src="https://i9.ytimg.com/vi/MBhCWppmuI8/mqdefault.jpg?sqp=CIDnvc4G&rs=AOn4CLB5ZfLAtNB4tcz9vPVEAR5tJSlYmA" alt="【菊与刀】深度解读｜鲁思·本尼迪克特" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【菊与刀】深度解读｜鲁思·本尼迪克特</div>
-        <div class="card-meta"><span>2026-03-19</span><span class="views">▶ 0</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=ckpv9DXq_iI" target="_blank" rel="noopener">
-      <img src="https://i9.ytimg.com/vi/ckpv9DXq_iI/mqdefault.jpg?sqp=CIDnvc4G&rs=AOn4CLA8tkZPDtz5Qd_xcG-TwoAzPmXLAQ" alt="【繁荣与停滞】深度解读｜伊藤隆敏" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【繁荣与停滞】深度解读｜伊藤隆敏</div>
-        <div class="card-meta"><span>2026-03-19</span><span class="views">▶ 0</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=Ynuom9u5Pxg" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/Ynuom9u5Pxg/mqdefault.jpg" alt="【03_eurotrash】深度解读｜克里斯蒂安·克拉赫特" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【03_eurotrash】深度解读｜克里斯蒂安·克拉赫特</div>
-        <div class="card-meta"><span>2026-03-18</span><span class="views">▶ 11</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=Z-HF4uoHNMM" target="_blank" rel="noopener">
-      <img src="https://i9.ytimg.com/vi/Z-HF4uoHNMM/mqdefault.jpg?sqp=CIDnvc4G&rs=AOn4CLDa7hWZHc4XQDoHiWGDWzQ3dG9qeg" alt="【社会为什么对年轻人冷酷无情】当努力不再能改变命运，阶层向下流动成为普遍的刺痛。｜山田昌弘" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【社会为什么对年轻人冷酷无情】当努力不再能改变命运，阶层向下流动成为普遍的刺痛。｜山田昌弘</div>
-        <div class="card-meta"><span>2026-03-18</span><span class="views">▶ 0</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=twPjG_lJKkk" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/twPjG_lJKkk/mqdefault.jpg" alt="【02_of_paradise_and_power】深度解读｜罗伯特·卡根" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【02_of_paradise_and_power】深度解读｜罗伯特·卡根</div>
-        <div class="card-meta"><span>2026-03-17</span><span class="views">▶ 8</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=lzl-Xg4ANDQ" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/lzl-Xg4ANDQ/mqdefault.jpg" alt="【01_strange_death_of_europe】深度解读｜道格拉斯·默里" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【01_strange_death_of_europe】深度解读｜道格拉斯·默里</div>
-        <div class="card-meta"><span>2026-03-16</span><span class="views">▶ 8</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=bsKEL4-CqTA" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/bsKEL4-CqTA/mqdefault.jpg" alt="【机械宇宙】深度解读｜爱德华·多尼克" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【机械宇宙】深度解读｜爱德华·多尼克</div>
-        <div class="card-meta"><span>2026-03-15</span><span class="views">▶ 5</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=5wCfbYqmIGI" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/5wCfbYqmIGI/mqdefault.jpg" alt="【世界观】深度解读｜理查德·德威特" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【世界观】深度解读｜理查德·德威特</div>
-        <div class="card-meta"><span>2026-03-14</span><span class="views">▶ 6</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=QQE_kahPBkw" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/QQE_kahPBkw/mqdefault.jpg" alt="【不安的哲学】痛苦来自我们过度地想要控制无法掌控的未来。｜岸见一郎" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【不安的哲学】痛苦来自我们过度地想要控制无法掌控的未来。｜岸见一郎</div>
-        <div class="card-meta"><span>2026-03-13</span><span class="views">▶ 20</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=yiG2fzJfTx0" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/yiG2fzJfTx0/mqdefault.jpg" alt="【幸福的勇气】爱不是被动的等待，而是主动的抉择与创造。｜岸见一郎" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【幸福的勇气】爱不是被动的等待，而是主动的抉择与创造。｜岸见一郎</div>
-        <div class="card-meta"><span>2026-03-12</span><span class="views">▶ 6</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=U2QmVGswDfM" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/U2QmVGswDfM/mqdefault.jpg" alt="【被讨厌的勇气】深度解读｜岸见一郎" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【被讨厌的勇气】深度解读｜岸见一郎</div>
-        <div class="card-meta"><span>2026-03-11</span><span class="views">▶ 4</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=8_AJyIJ39q4" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/8_AJyIJ39q4/mqdefault.jpg" alt="【如何在自己感兴趣的领域出类拔萃】要精通某个领域，你必须先感受到你跟它的深刻联系。｜罗伯特·格林" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【如何在自己感兴趣的领域出类拔萃】要精通某个领域，你必须先感受到你跟它的深刻联系。｜罗伯特·格林</div>
-        <div class="card-meta"><span>2026-03-10</span><span class="views">▶ 50</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=3yFW9M5EvYI" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/3yFW9M5EvYI/mqdefault.jpg" alt="【如何找到想做的事】深度解读｜八木仁平" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【如何找到想做的事】深度解读｜八木仁平</div>
-        <div class="card-meta"><span>2026-03-09</span><span class="views">▶ 145</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=mWVRWW09j8Q" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/mWVRWW09j8Q/mqdefault.jpg" alt="【枪炮、病菌与钢铁：人类社会的命运】深度解读｜贾雷德·戴蒙德" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【枪炮、病菌与钢铁：人类社会的命运】深度解读｜贾雷德·戴蒙德</div>
-        <div class="card-meta"><span>2026-03-08</span><span class="views">▶ 59</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=Oc54jNthPJY" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/Oc54jNthPJY/mqdefault.jpg" alt="【智人之上】深度解读｜尤瓦尔·赫拉利" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【智人之上】深度解读｜尤瓦尔·赫拉利</div>
-        <div class="card-meta"><span>2026-03-07</span><span class="views">▶ 10</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=ZnrLmJgy39Q" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/ZnrLmJgy39Q/mqdefault.jpg" alt="【未来简史】深度解读｜尤瓦尔·赫拉利" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【未来简史】深度解读｜尤瓦尔·赫拉利</div>
-        <div class="card-meta"><span>2026-03-07</span><span class="views">▶ 12</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=-9jk2aDnmhg" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/-9jk2aDnmhg/mqdefault.jpg" alt="【穷查理宝典】深度解读｜查理·芒格" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【穷查理宝典】深度解读｜查理·芒格</div>
-        <div class="card-meta"><span>2026-03-06</span><span class="views">▶ 26</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=_3Siz4JuGq0" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/_3Siz4JuGq0/mqdefault.jpg" alt="【解惑：心智模式决定你的一生】深度解读｜E.F.舒马赫" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【解惑：心智模式决定你的一生】深度解读｜E.F.舒马赫</div>
-        <div class="card-meta"><span>2026-03-06</span><span class="views">▶ 38</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=5mUnJp-0hLY" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/5mUnJp-0hLY/mqdefault.jpg" alt="【列奥纳多·达·芬奇传】深度解读｜沃尔特·艾萨克森" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【列奥纳多·达·芬奇传】深度解读｜沃尔特·艾萨克森</div>
-        <div class="card-meta"><span>2026-03-05</span><span class="views">▶ 6</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=be2ejtefwT0" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/be2ejtefwT0/mqdefault.jpg" alt="【爱因斯坦传】人们用最不科学的方式，将一位科学家推上了神坛。｜沃尔特·艾萨克森" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【爱因斯坦传】人们用最不科学的方式，将一位科学家推上了神坛。｜沃尔特·艾萨克森</div>
-        <div class="card-meta"><span>2026-03-05</span><span class="views">▶ 23</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=R4cRs0K041g" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/R4cRs0K041g/mqdefault.jpg" alt="【为什么佛学是真的】你有勇气吞下红色药丸，直面大脑编织的幻象吗？｜罗伯特·赖特" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【为什么佛学是真的】你有勇气吞下红色药丸，直面大脑编织的幻象吗？｜罗伯特·赖特</div>
-        <div class="card-meta"><span>2026-03-05</span><span class="views">▶ 87</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=syFMHHM9_Pw" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/syFMHHM9_Pw/mqdefault.jpg" alt="【面纱】深度解读｜威廉·萨默塞特·毛姆" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【面纱】深度解读｜威廉·萨默塞特·毛姆</div>
-        <div class="card-meta"><span>2026-03-05</span><span class="views">▶ 14</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=401Kwpm6vVc" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/401Kwpm6vVc/mqdefault.jpg" alt="【第三个千年思维】在噪音的洪流中，清醒的思维是你唯一的方舟。｜索尔·珀尔马特" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【第三个千年思维】在噪音的洪流中，清醒的思维是你唯一的方舟。｜索尔·珀尔马特</div>
-        <div class="card-meta"><span>2026-03-03</span><span class="views">▶ 8</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=0Kz03hBkcXo" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/0Kz03hBkcXo/mqdefault.jpg" alt="【稻盛和夫自传】伟大的故事往往开始于微不足道甚至略显尴尬的起点。｜稻盛和夫" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【稻盛和夫自传】伟大的故事往往开始于微不足道甚至略显尴尬的起点。｜稻盛和夫</div>
-        <div class="card-meta"><span>2026-03-03</span><span class="views">▶ 29</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=Msb3DfExOUA" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/Msb3DfExOUA/mqdefault.jpg" alt="【悉达多】当我们剥离了名字、职业和身份，我们究竟是谁？｜赫尔曼·黑塞" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【悉达多】当我们剥离了名字、职业和身份，我们究竟是谁？｜赫尔曼·黑塞</div>
-        <div class="card-meta"><span>2026-03-03</span><span class="views">▶ 49</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=68A4_2nh9gI" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/68A4_2nh9gI/mqdefault.jpg" alt="【年轻人的国文课】深度解读｜张一南" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【年轻人的国文课】深度解读｜张一南</div>
-        <div class="card-meta"><span>2026-03-03</span><span class="views">▶ 4</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=GXX5_S5nAIQ" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/GXX5_S5nAIQ/mqdefault.jpg" alt="【尽忠报国：岳飞新传】生逢乱世，天生神力，少年的岳飞已注定不会平凡。｜王曾瑜" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【尽忠报国：岳飞新传】生逢乱世，天生神力，少年的岳飞已注定不会平凡。｜王曾瑜</div>
-        <div class="card-meta"><span>2026-03-03</span><span class="views">▶ 3</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=6vr1V0NJOSU" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/6vr1V0NJOSU/mqdefault.jpg" alt="【好奇心】好奇心源于已知与未知之间的缝隙，只有撕开缺口，光才能照进来。｜伊恩·莱斯利" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【好奇心】好奇心源于已知与未知之间的缝隙，只有撕开缺口，光才能照进来。｜伊恩·莱斯利</div>
-        <div class="card-meta"><span>2026-03-03</span><span class="views">▶ 6</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=ti-GaKY73lU" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/ti-GaKY73lU/mqdefault.jpg" alt="【帝国的崩裂：细说五代十国史】深度解读｜李奕定" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【帝国的崩裂：细说五代十国史】深度解读｜李奕定</div>
-        <div class="card-meta"><span>2026-03-03</span><span class="views">▶ 39</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=RDiUfnkaNYQ" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/RDiUfnkaNYQ/mqdefault.jpg" alt="【捉弄人的大脑】深度解读｜阿尔贝尔·穆海贝尔" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【捉弄人的大脑】深度解读｜阿尔贝尔·穆海贝尔</div>
-        <div class="card-meta"><span>2026-03-03</span><span class="views">▶ 18</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=rkxfPoTry40" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/rkxfPoTry40/mqdefault.jpg" alt="【月亮和六便士】我不想谋生，我只想生活。｜威廉·萨默塞特·毛姆" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【月亮和六便士】我不想谋生，我只想生活。｜威廉·萨默塞特·毛姆</div>
-        <div class="card-meta"><span>2026-03-03</span><span class="views">▶ 6</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=Z1BRH7c0g5I" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/Z1BRH7c0g5I/mqdefault.jpg" alt="【道德经】深度解读｜老子" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【道德经】深度解读｜老子</div>
-        <div class="card-meta"><span>2026-03-03</span><span class="views">▶ 11</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=ELI_2s1jfTQ" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/ELI_2s1jfTQ/mqdefault.jpg" alt="【卓有成效的管理者】在知识经济时代，每一个动脑思考的人，都是管理者。｜彼得·德鲁克" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【卓有成效的管理者】在知识经济时代，每一个动脑思考的人，都是管理者。｜彼得·德鲁克</div>
-        <div class="card-meta"><span>2026-03-03</span><span class="views">▶ 10</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=XZb2a9X18xc" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/XZb2a9X18xc/mqdefault.jpg" alt="【罗生门】深度解读｜芥川龙之介" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【罗生门】深度解读｜芥川龙之介</div>
-        <div class="card-meta"><span>2026-03-03</span><span class="views">▶ 21</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=Owziqg8ZDII" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/Owziqg8ZDII/mqdefault.jpg" alt="【史记·刺客列传】深度解读｜司马迁" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【史记·刺客列传】深度解读｜司马迁</div>
-        <div class="card-meta"><span>2026-03-02</span><span class="views">▶ 22</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=oC_QJhbjSxo" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/oC_QJhbjSxo/mqdefault.jpg" alt="【中国儒学三千年】山东是华夏儿女心中的圣城所在｜马勇" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【中国儒学三千年】山东是华夏儿女心中的圣城所在｜马勇</div>
-        <div class="card-meta"><span>2026-03-02</span><span class="views">▶ 7</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=xQiLCVI7Vto" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/xQiLCVI7Vto/mqdefault.jpg" alt="【社会契约论】人是生而自由的，但却无往不在枷锁之中。｜让-雅克·卢梭" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【社会契约论】人是生而自由的，但却无往不在枷锁之中。｜让-雅克·卢梭</div>
-        <div class="card-meta"><span>2026-03-02</span><span class="views">▶ 18</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=9WHz2R3rxGk" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/9WHz2R3rxGk/mqdefault.jpg" alt="【中国文化的精神】深度解读｜许倬云" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【中国文化的精神】深度解读｜许倬云</div>
-        <div class="card-meta"><span>2026-03-02</span><span class="views">▶ 9</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=29Ooo8CoRzA" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/29Ooo8CoRzA/mqdefault.jpg" alt="【人类简史】地球曾是多种人类共存的“中土世界”｜尤瓦尔·赫拉利" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【人类简史】地球曾是多种人类共存的“中土世界”｜尤瓦尔·赫拉利</div>
-        <div class="card-meta"><span>2026-03-02</span><span class="views">▶ 44</span></div>
-      </div>
+<!-- ═══════════ HERO ═══════════ -->
+<section class="hero">
+  <div class="hero-banner"></div>
+  <div class="hero-content">
+    <img class="logo-img" src="https://yt3.ggpht.com/YXmLatb8XvZRTMgpGUi69w1N4KWrQHAzXbzy5oB2D1zpdqzY8T_kIPnwcHuEb6dhIATPHoqQ0Q=s800-c-k-c0x00ffffff-no-rj" alt="读·见·行 Logo">
+    <h1 class="hero-title">读 · 见 · 行</h1>
+    <div class="hero-dots">
+      <div class="hero-dot"></div>
+      <div class="hero-dot"></div>
+      <div class="hero-dot"></div>
+    </div>
+    <p class="hero-tagline">读 书 · 看 见 · 然 后 行 动</p>
+    <p class="hero-desc">用视觉信息图解读全球经典——历史、哲学、科学、人文。不止于理解，更关心改变。每期提炼「行动启示」，从书中汲取可以立刻落地的思维方式。</p>
+    <a class="subscribe-btn" href="https://www.youtube.com/@readsightact?sub_confirmation=1" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.5 31.5 0 000 12a31.5 31.5 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.5 31.5 0 0024 12a31.5 31.5 0 00-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+      订阅频道
     </a>
   </div>
-</div>
+</section>
 
-<div class="section">
-  <h2>🤖 AI 教程 & 资讯</h2>
-  <div class="grid">
-    <a class="card" href="https://www.youtube.com/watch?v=fMNDARZ0Sz4" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/fMNDARZ0Sz4/mqdefault.jpg" alt="第三期「OpenClaw 能力拓展」— App原型 + 开发者技能库" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">第三期「OpenClaw 能力拓展」— App原型 + 开发者技能库</div>
-        <div class="card-meta"><span>2026-04-01</span><span class="views">▶ 2</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=oraXvT-19VY" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/oraXvT-19VY/mqdefault.jpg" alt="第二期「OpenClaw 实战开发」— 企业官网 + 团队协作" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">第二期「OpenClaw 实战开发」— 企业官网 + 团队协作</div>
-        <div class="card-meta"><span>2026-03-31</span><span class="views">▶ 1</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=IbXtdvQ7-G4" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/IbXtdvQ7-G4/mqdefault.jpg" alt="第一期「OpenClaw 从零上手」— 安装到自动推送" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">第一期「OpenClaw 从零上手」— 安装到自动推送</div>
-        <div class="card-meta"><span>2026-03-30</span><span class="views">▶ 7</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=jUAKMYvjiEY" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/jUAKMYvjiEY/mqdefault.jpg" alt="【AI NEWS Weekly】2026.03.23 ~ 2026.03.29" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【AI NEWS Weekly】2026.03.23 ~ 2026.03.29</div>
-        <div class="card-meta"><span>2026-03-30</span><span class="views">▶ 1</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=bjx0cNHwJNg" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/bjx0cNHwJNg/mqdefault.jpg" alt="【AI NEWS Weekly】2026.03.16 ~ 2026.03.22｜Claude Cowor・Claude 100 万・Claude Code" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【AI NEWS Weekly】2026.03.16 ~ 2026.03.22｜Claude Cowor・Claude 100 万・Claude Code</div>
-        <div class="card-meta"><span>2026-03-30</span><span class="views">▶ 1</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=oXMQtlu7WM8" target="_blank" rel="noopener">
-      <img src="https://i9.ytimg.com/vi/oXMQtlu7WM8/mqdefault.jpg?sqp=CIDnvc4G&rs=AOn4CLDEvozdo8YbY4hSvJ1mLVLfRUCNVg" alt="【Agentic Design Patterns】深度解读｜安东尼奥·古利" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">【Agentic Design Patterns】深度解读｜安东尼奥·古利</div>
-        <div class="card-meta"><span>2026-03-20</span><span class="views">▶ 0</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://www.youtube.com/watch?v=7VWVPYg3X1c" target="_blank" rel="noopener">
-      <img src="https://i.ytimg.com/vi/7VWVPYg3X1c/mqdefault.jpg" alt="AI NEWS Weekly — 2026.03.09 ~ 2026.03.15｜读·见·行" loading="lazy">
-      <div class="card-body">
-        <div class="card-title">AI NEWS Weekly — 2026.03.09 ~ 2026.03.15｜读·见·行</div>
-        <div class="card-meta"><span>2026-03-15</span><span class="views">▶ 1</span></div>
-      </div>
-    </a>
+<!-- ═══════════ STATS ═══════════ -->
+<div class="stats-bar" id="stats"></div>
+
+<!-- ═══════════ BOOKS SECTION ═══════════ -->
+<section class="section">
+  <div class="section-header">
+    <span class="section-icon">📚</span>
+    <h2 class="section-title">书籍深度解读</h2>
+    <div class="section-line"></div>
   </div>
+  <div class="filter-bar" id="bookFilters"></div>
+  <div class="video-grid" id="bookGrid"></div>
+</section>
+
+<!-- ═══════════ SEAL DIVIDER ═══════════ -->
+<div class="seal-divider">
+  <div class="seal-stamp">行</div>
 </div>
 
+<!-- ═══════════ TECH SECTION ═══════════ -->
+<section class="section">
+  <div class="section-header">
+    <span class="section-icon">🤖</span>
+    <h2 class="section-title">AI 教程 & 资讯</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="video-grid" id="techGrid"></div>
+</section>
+
+<!-- ═══════════ FOOTER ═══════════ -->
 <footer>
-  <p>© 2026 <a href="https://www.youtube.com/@readsightact" target="_blank">读·见·行 Read Sight Act</a> · 每期解读一本好书，提炼可落地的行动启示</p>
-  <p style="margin-top:8px">联系：<a href="mailto:readsightaction@gmail.com">readsightaction@gmail.com</a></p>
+  <div class="footer-brand">读 · 见 · 行</div>
+  <p class="footer-desc">每一期都是一次从阅读到行动的旅程</p>
+  <div class="footer-links">
+    <a href="https://www.youtube.com/@readsightact" target="_blank">YouTube 频道</a>
+    <a href="mailto:readsightaction@gmail.com">联系我们</a>
+  </div>
+  <p class="footer-copy">© 2026 读·见·行 Read Sight Act · 读见行</p>
 </footer>
+
+<script>
+// Video data injected at build time
+const VIDEOS = [{"id": "ikLPdaFI80U", "title": "【东京】极致的政治控制术，意外催生了江户空前的财富与繁华。｜斯蒂芬·曼斯菲尔德", "published": "2026-04-02", "views": 0, "thumbnail": "https://i.ytimg.com/vi/ikLPdaFI80U/mqdefault.jpg"}, {"id": "XW7GVGxn0Uc", "title": "移民危机→美欧分裂→身份瓦解：3本书看懂欧洲的裂变｜读·见·行", "published": "2026-04-02", "views": 1, "thumbnail": "https://i.ytimg.com/vi/XW7GVGxn0Uc/mqdefault.jpg"}, {"id": "UvpcIqhQkBo", "title": "【低利率时代】泡沫不是因为人们失去理智，而是因为他们太理智了。｜理查德·邓肯", "published": "2026-04-01", "views": 2, "thumbnail": "https://i.ytimg.com/vi/UvpcIqhQkBo/mqdefault.jpg"}, {"id": "fMNDARZ0Sz4", "title": "第三期「OpenClaw 能力拓展」— App原型 + 开发者技能库", "published": "2026-04-01", "views": 2, "thumbnail": "https://i.ytimg.com/vi/fMNDARZ0Sz4/mqdefault.jpg"}, {"id": "LOIrPch1z-Q", "title": "打破思维牢笼→放下执念→回到当下：3本书找到心安之所｜读·见·行", "published": "2026-04-01", "views": 3, "thumbnail": "https://i.ytimg.com/vi/LOIrPch1z-Q/mqdefault.jpg"}, {"id": "H7Dv2EVJuyo", "title": "【超越巴菲特的伯克希尔】深度解读｜劳伦斯·A.坎宁安", "published": "2026-03-31", "views": 15, "thumbnail": "https://i.ytimg.com/vi/H7Dv2EVJuyo/mqdefault.jpg"}, {"id": "oraXvT-19VY", "title": "第二期「OpenClaw 实战开发」— 企业官网 + 团队协作", "published": "2026-03-31", "views": 1, "thumbnail": "https://i.ytimg.com/vi/oraXvT-19VY/mqdefault.jpg"}, {"id": "_MMARVMEAFM", "title": "找到方向→刻意练习→突破瓶颈：自我精进方法论｜读·见·行", "published": "2026-03-31", "views": 1, "thumbnail": "https://i.ytimg.com/vi/_MMARVMEAFM/mqdefault.jpg"}, {"id": "IbXtdvQ7-G4", "title": "第一期「OpenClaw 从零上手」— 安装到自动推送", "published": "2026-03-30", "views": 7, "thumbnail": "https://i.ytimg.com/vi/IbXtdvQ7-G4/mqdefault.jpg"}, {"id": "k-xW-okyTAE", "title": "【财富方程式】深度解读｜斯科特·加洛韦", "published": "2026-03-30", "views": 3, "thumbnail": "https://i.ytimg.com/vi/k-xW-okyTAE/mqdefault.jpg"}, {"id": "-kUJFSK74eI", "title": "逆商→穿越风暴→反脆弱：3本书教你在混乱中获益｜读·见·行", "published": "2026-03-30", "views": 1, "thumbnail": "https://i.ytimg.com/vi/-kUJFSK74eI/mqdefault.jpg"}, {"id": "jUAKMYvjiEY", "title": "【AI NEWS Weekly】2026.03.23 ~ 2026.03.29", "published": "2026-03-30", "views": 1, "thumbnail": "https://i.ytimg.com/vi/jUAKMYvjiEY/mqdefault.jpg"}, {"id": "bjx0cNHwJNg", "title": "【AI NEWS Weekly】2026.03.16 ~ 2026.03.22｜Claude Cowor・Claude 100 万・Claude Code", "published": "2026-03-30", "views": 1, "thumbnail": "https://i.ytimg.com/vi/bjx0cNHwJNg/mqdefault.jpg"}, {"id": "Mz3DTgxCL58", "title": "【源代码：比尔盖茨的首部自传】抛开首富的财富滤镜，去认识一个有血有肉的极客。｜比尔·盖茨", "published": "2026-03-29", "views": 0, "thumbnail": "https://i.ytimg.com/vi/Mz3DTgxCL58/mqdefault.jpg"}, {"id": "sdwob2EKjz4", "title": "道德经→儒学→文化精神：中国思想三千年的源与流｜读·见·行", "published": "2026-03-29", "views": 3, "thumbnail": "https://i.ytimg.com/vi/sdwob2EKjz4/mqdefault.jpg"}, {"id": "WBlxEg-DN0Q", "title": "【思考，快与慢】深度解读｜丹尼尔·卡尼曼（Daniel Kahneman）", "published": "2026-03-28", "views": 2, "thumbnail": "https://i.ytimg.com/vi/WBlxEg-DN0Q/mqdefault.jpg"}, {"id": "LHPhi61ieNY", "title": "经济→文化→个体：3本书拆解日本社会的深层逻辑｜读·见·行", "published": "2026-03-28", "views": 10, "thumbnail": "https://i.ytimg.com/vi/LHPhi61ieNY/mqdefault.jpg"}, {"id": "GvanCP0gMNE", "title": "【为什么伟大不能被计划】深度解读｜肯尼斯·斯坦利", "published": "2026-03-27", "views": 13, "thumbnail": "https://i.ytimg.com/vi/GvanCP0gMNE/mqdefault.jpg"}, {"id": "a1yXb9LRNsk", "title": "芒格+卡尼曼+豪泽尔：3本书建立财富底层思维｜读·见·行", "published": "2026-03-27", "views": 1, "thumbnail": "https://i.ytimg.com/vi/a1yXb9LRNsk/mqdefault.jpg"}, {"id": "UGV6kjihgtU", "title": "【法律的悖论】深度解读｜罗翔", "published": "2026-03-27", "views": 0, "thumbnail": "https://i9.ytimg.com/vi/UGV6kjihgtU/mqdefault.jpg?sqp=CIDnvc4G&rs=AOn4CLC3o0G-O36n4sTwDIuWKSeSm8jqGg"}, {"id": "tlG5FXn2yzw", "title": "【论自由】我们往往被伟大的观念塑造，却不知其真正的源头。｜约翰·斯图尔特·密尔", "published": "2026-03-27", "views": 0, "thumbnail": "https://i9.ytimg.com/vi/tlG5FXn2yzw/mqdefault.jpg?sqp=CIDnvc4G&rs=AOn4CLA6sMslf1jb914VnicOEopYl8cJ6Q"}, {"id": "NEgFdPCq7vE", "title": "【道德形而上学原理】人数众多的选择，并不等同于绝对正确的道德标尺。｜伊曼努尔·康德", "published": "2026-03-27", "views": 0, "thumbnail": "https://i9.ytimg.com/vi/NEgFdPCq7vE/mqdefault.jpg?sqp=CIDnvc4G&rs=AOn4CLBv_iZZ1n1YwYgZxxEK0DYvHoHjqg"}, {"id": "DrY0ITxieBw", "title": "【一如既往】预言家的唯一秘诀就是多做预言，然后删掉猜错的。｜摩根·豪泽尔", "published": "2026-03-26", "views": 6, "thumbnail": "https://i.ytimg.com/vi/DrY0ITxieBw/mqdefault.jpg"}, {"id": "f2onqDatGws", "title": "达芬奇→爱因斯坦→乔布斯：艾萨克森笔下天才的共同密码｜读·见·行", "published": "2026-03-26", "views": 2, "thumbnail": "https://i.ytimg.com/vi/f2onqDatGws/mqdefault.jpg"}, {"id": "xlMO1Ta_ZOo", "title": "【史蒂夫·乔布斯传】深度解读｜沃尔特·艾萨克森", "published": "2026-03-25", "views": 2, "thumbnail": "https://i.ytimg.com/vi/xlMO1Ta_ZOo/mqdefault.jpg"}, {"id": "bz2eDy2RpQ4", "title": "人生该追求什么？毛姆和黑塞给出了三种截然不同的答案｜读·见·行", "published": "2026-03-25", "views": 1, "thumbnail": "https://i.ytimg.com/vi/bz2eDy2RpQ4/mqdefault.jpg"}, {"id": "vjdqeb6b6CI", "title": "【能力陷阱】你目前能想到的最好未来，其实限制了你的无限可能。｜埃米尼亚·伊贝拉", "published": "2026-03-24", "views": 1, "thumbnail": "https://i.ytimg.com/vi/vjdqeb6b6CI/mqdefault.jpg"}, {"id": "0YlhUkbB3ic", "title": "枪炮病菌钢铁+社会契约论+有限无限游戏：文明碰撞三部曲｜读·见·行", "published": "2026-03-24", "views": 0, "thumbnail": "https://i9.ytimg.com/vi/0YlhUkbB3ic/mqdefault.jpg?sqp=CIDnvc4G&rs=AOn4CLA4A_VjdaBsogQtrbyGHg6hI2rlbg"}, {"id": "l8d7RtsbVKE", "title": "大脑的bug→好奇心的秘密→世界观的崩塌：认知升级三部曲｜读·见·行", "published": "2026-03-24", "views": 0, "thumbnail": "https://i9.ytimg.com/vi/l8d7RtsbVKE/mqdefault.jpg?sqp=CIDnvc4G&rs=AOn4CLBru3vQFKWex5L597t7-J7f2sik0A"}, {"id": "CCmoDofumiw", "title": "财富方程式+伟大不能被计划+伯克希尔：财富创造的三重密码｜读·见·行", "published": "2026-03-24", "views": 0, "thumbnail": "https://i9.ytimg.com/vi/CCmoDofumiw/mqdefault.jpg?sqp=CIDnvc4G&rs=AOn4CLBAjANjXdl_8ky-VqU0lyKk93UbPw"}, {"id": "u1BfJY2Mdhk", "title": "从被讨厌到幸福：阿德勒勇气三部曲教你活出自由人生｜读·见·行", "published": "2026-03-24", "views": 4, "thumbnail": "https://i.ytimg.com/vi/u1BfJY2Mdhk/mqdefault.jpg"}, {"id": "9ElBsBEJumI", "title": "【有限与无限的游戏】有限游戏在界限内玩，以取胜和终结为唯一目标。｜詹姆斯·卡斯", "published": "2026-03-23", "views": 2, "thumbnail": "https://i.ytimg.com/vi/9ElBsBEJumI/mqdefault.jpg"}, {"id": "xuWA3dk1GoI", "title": "【随他们去】深度解读｜梅尔·罗宾斯", "published": "2026-03-23", "views": 0, "thumbnail": "https://i9.ytimg.com/vi/xuWA3dk1GoI/mqdefault.jpg?sqp=CIDnvc4G&rs=AOn4CLBrFN5B9kD49fPvfZ7ZC6QCgZgKMw"}, {"id": "wz5PlQ8ybQw", "title": "从虚构故事到AI算法：谁在真正统治人类？— 赫拉利三部曲解读｜读·见·行", "published": "2026-03-23", "views": 108, "thumbnail": "https://i.ytimg.com/vi/wz5PlQ8ybQw/mqdefault.jpg"}, {"id": "OYRZZmmfbJc", "title": "【我们终将穿越风暴】深度解读｜马丁·塞利格曼", "published": "2026-03-22", "views": 3, "thumbnail": "https://i.ytimg.com/vi/OYRZZmmfbJc/mqdefault.jpg"}, {"id": "myipwbj_oyY", "title": "【思维的囚徒】深度解读｜亚历克斯·佩塔克斯", "published": "2026-03-21", "views": 8, "thumbnail": "https://i.ytimg.com/vi/myipwbj_oyY/mqdefault.jpg"}, {"id": "io_Cg6gyzww", "title": "【反脆弱】反脆弱不是坚如磐石，而是触底反弹、愈挫愈勇。｜纳西姆·尼古拉斯·塔勒布", "published": "2026-03-20", "views": 1, "thumbnail": "https://i.ytimg.com/vi/io_Cg6gyzww/mqdefault.jpg"}, {"id": "oXMQtlu7WM8", "title": "【Agentic Design Patterns】深度解读｜安东尼奥·古利", "published": "2026-03-20", "views": 0, "thumbnail": "https://i9.ytimg.com/vi/oXMQtlu7WM8/mqdefault.jpg?sqp=CIDnvc4G&rs=AOn4CLDEvozdo8YbY4hSvJ1mLVLfRUCNVg"}, {"id": "LnFJPlqZa_k", "title": "【厌女】深度解读｜上野千鹤子", "published": "2026-03-20", "views": 0, "thumbnail": "https://i9.ytimg.com/vi/LnFJPlqZa_k/mqdefault.jpg?sqp=CIDnvc4G&rs=AOn4CLBtk1lJBvCV9RF0jjUrw5zrk1OLCA"}, {"id": "jRaRlVA3ynI", "title": "【刻意练习】深度解读｜安德斯·艾利克森", "published": "2026-03-19", "views": 17, "thumbnail": "https://i.ytimg.com/vi/jRaRlVA3ynI/mqdefault.jpg"}, {"id": "iAnoCYZVRUc", "title": "【我还能看到多少次满月升起】平凡的轨道永远无法抵达不凡的终点。｜坂本龙一", "published": "2026-03-19", "views": 0, "thumbnail": "https://i9.ytimg.com/vi/iAnoCYZVRUc/mqdefault.jpg?sqp=CIDnvc4G&rs=AOn4CLAEDrL_8uWvRYqaUcE78h2I7EwAMg"}, {"id": "MBhCWppmuI8", "title": "【菊与刀】深度解读｜鲁思·本尼迪克特", "published": "2026-03-19", "views": 0, "thumbnail": "https://i9.ytimg.com/vi/MBhCWppmuI8/mqdefault.jpg?sqp=CIDnvc4G&rs=AOn4CLB5ZfLAtNB4tcz9vPVEAR5tJSlYmA"}, {"id": "ckpv9DXq_iI", "title": "【繁荣与停滞】深度解读｜伊藤隆敏", "published": "2026-03-19", "views": 0, "thumbnail": "https://i9.ytimg.com/vi/ckpv9DXq_iI/mqdefault.jpg?sqp=CIDnvc4G&rs=AOn4CLA8tkZPDtz5Qd_xcG-TwoAzPmXLAQ"}, {"id": "Ynuom9u5Pxg", "title": "【03_eurotrash】深度解读｜克里斯蒂安·克拉赫特", "published": "2026-03-18", "views": 11, "thumbnail": "https://i.ytimg.com/vi/Ynuom9u5Pxg/mqdefault.jpg"}, {"id": "Z-HF4uoHNMM", "title": "【社会为什么对年轻人冷酷无情】当努力不再能改变命运，阶层向下流动成为普遍的刺痛。｜山田昌弘", "published": "2026-03-18", "views": 0, "thumbnail": "https://i9.ytimg.com/vi/Z-HF4uoHNMM/mqdefault.jpg?sqp=CIDnvc4G&rs=AOn4CLDa7hWZHc4XQDoHiWGDWzQ3dG9qeg"}, {"id": "twPjG_lJKkk", "title": "【02_of_paradise_and_power】深度解读｜罗伯特·卡根", "published": "2026-03-17", "views": 8, "thumbnail": "https://i.ytimg.com/vi/twPjG_lJKkk/mqdefault.jpg"}, {"id": "lzl-Xg4ANDQ", "title": "【01_strange_death_of_europe】深度解读｜道格拉斯·默里", "published": "2026-03-16", "views": 8, "thumbnail": "https://i.ytimg.com/vi/lzl-Xg4ANDQ/mqdefault.jpg"}, {"id": "7VWVPYg3X1c", "title": "AI NEWS Weekly — 2026.03.09 ~ 2026.03.15｜读·见·行", "published": "2026-03-15", "views": 1, "thumbnail": "https://i.ytimg.com/vi/7VWVPYg3X1c/mqdefault.jpg"}, {"id": "bsKEL4-CqTA", "title": "【机械宇宙】深度解读｜爱德华·多尼克", "published": "2026-03-15", "views": 5, "thumbnail": "https://i.ytimg.com/vi/bsKEL4-CqTA/mqdefault.jpg"}, {"id": "5wCfbYqmIGI", "title": "【世界观】深度解读｜理查德·德威特", "published": "2026-03-14", "views": 6, "thumbnail": "https://i.ytimg.com/vi/5wCfbYqmIGI/mqdefault.jpg"}, {"id": "QQE_kahPBkw", "title": "【不安的哲学】痛苦来自我们过度地想要控制无法掌控的未来。｜岸见一郎", "published": "2026-03-13", "views": 20, "thumbnail": "https://i.ytimg.com/vi/QQE_kahPBkw/mqdefault.jpg"}, {"id": "yiG2fzJfTx0", "title": "【幸福的勇气】爱不是被动的等待，而是主动的抉择与创造。｜岸见一郎", "published": "2026-03-12", "views": 6, "thumbnail": "https://i.ytimg.com/vi/yiG2fzJfTx0/mqdefault.jpg"}, {"id": "U2QmVGswDfM", "title": "【被讨厌的勇气】深度解读｜岸见一郎", "published": "2026-03-11", "views": 4, "thumbnail": "https://i.ytimg.com/vi/U2QmVGswDfM/mqdefault.jpg"}, {"id": "8_AJyIJ39q4", "title": "【如何在自己感兴趣的领域出类拔萃】要精通某个领域，你必须先感受到你跟它的深刻联系。｜罗伯特·格林", "published": "2026-03-10", "views": 50, "thumbnail": "https://i.ytimg.com/vi/8_AJyIJ39q4/mqdefault.jpg"}, {"id": "3yFW9M5EvYI", "title": "【如何找到想做的事】深度解读｜八木仁平", "published": "2026-03-09", "views": 145, "thumbnail": "https://i.ytimg.com/vi/3yFW9M5EvYI/mqdefault.jpg"}, {"id": "mWVRWW09j8Q", "title": "【枪炮、病菌与钢铁：人类社会的命运】深度解读｜贾雷德·戴蒙德", "published": "2026-03-08", "views": 59, "thumbnail": "https://i.ytimg.com/vi/mWVRWW09j8Q/mqdefault.jpg"}, {"id": "Oc54jNthPJY", "title": "【智人之上】深度解读｜尤瓦尔·赫拉利", "published": "2026-03-07", "views": 10, "thumbnail": "https://i.ytimg.com/vi/Oc54jNthPJY/mqdefault.jpg"}, {"id": "ZnrLmJgy39Q", "title": "【未来简史】深度解读｜尤瓦尔·赫拉利", "published": "2026-03-07", "views": 12, "thumbnail": "https://i.ytimg.com/vi/ZnrLmJgy39Q/mqdefault.jpg"}, {"id": "-9jk2aDnmhg", "title": "【穷查理宝典】深度解读｜查理·芒格", "published": "2026-03-06", "views": 26, "thumbnail": "https://i.ytimg.com/vi/-9jk2aDnmhg/mqdefault.jpg"}, {"id": "_3Siz4JuGq0", "title": "【解惑：心智模式决定你的一生】深度解读｜E.F.舒马赫", "published": "2026-03-06", "views": 38, "thumbnail": "https://i.ytimg.com/vi/_3Siz4JuGq0/mqdefault.jpg"}, {"id": "5mUnJp-0hLY", "title": "【列奥纳多·达·芬奇传】深度解读｜沃尔特·艾萨克森", "published": "2026-03-05", "views": 6, "thumbnail": "https://i.ytimg.com/vi/5mUnJp-0hLY/mqdefault.jpg"}, {"id": "be2ejtefwT0", "title": "【爱因斯坦传】人们用最不科学的方式，将一位科学家推上了神坛。｜沃尔特·艾萨克森", "published": "2026-03-05", "views": 23, "thumbnail": "https://i.ytimg.com/vi/be2ejtefwT0/mqdefault.jpg"}, {"id": "R4cRs0K041g", "title": "【为什么佛学是真的】你有勇气吞下红色药丸，直面大脑编织的幻象吗？｜罗伯特·赖特", "published": "2026-03-05", "views": 87, "thumbnail": "https://i.ytimg.com/vi/R4cRs0K041g/mqdefault.jpg"}, {"id": "syFMHHM9_Pw", "title": "【面纱】深度解读｜威廉·萨默塞特·毛姆", "published": "2026-03-05", "views": 14, "thumbnail": "https://i.ytimg.com/vi/syFMHHM9_Pw/mqdefault.jpg"}, {"id": "401Kwpm6vVc", "title": "【第三个千年思维】在噪音的洪流中，清醒的思维是你唯一的方舟。｜索尔·珀尔马特", "published": "2026-03-03", "views": 8, "thumbnail": "https://i.ytimg.com/vi/401Kwpm6vVc/mqdefault.jpg"}, {"id": "0Kz03hBkcXo", "title": "【稻盛和夫自传】伟大的故事往往开始于微不足道甚至略显尴尬的起点。｜稻盛和夫", "published": "2026-03-03", "views": 29, "thumbnail": "https://i.ytimg.com/vi/0Kz03hBkcXo/mqdefault.jpg"}, {"id": "Msb3DfExOUA", "title": "【悉达多】当我们剥离了名字、职业和身份，我们究竟是谁？｜赫尔曼·黑塞", "published": "2026-03-03", "views": 49, "thumbnail": "https://i.ytimg.com/vi/Msb3DfExOUA/mqdefault.jpg"}, {"id": "68A4_2nh9gI", "title": "【年轻人的国文课】深度解读｜张一南", "published": "2026-03-03", "views": 4, "thumbnail": "https://i.ytimg.com/vi/68A4_2nh9gI/mqdefault.jpg"}, {"id": "GXX5_S5nAIQ", "title": "【尽忠报国：岳飞新传】生逢乱世，天生神力，少年的岳飞已注定不会平凡。｜王曾瑜", "published": "2026-03-03", "views": 3, "thumbnail": "https://i.ytimg.com/vi/GXX5_S5nAIQ/mqdefault.jpg"}, {"id": "6vr1V0NJOSU", "title": "【好奇心】好奇心源于已知与未知之间的缝隙，只有撕开缺口，光才能照进来。｜伊恩·莱斯利", "published": "2026-03-03", "views": 6, "thumbnail": "https://i.ytimg.com/vi/6vr1V0NJOSU/mqdefault.jpg"}, {"id": "ti-GaKY73lU", "title": "【帝国的崩裂：细说五代十国史】深度解读｜李奕定", "published": "2026-03-03", "views": 39, "thumbnail": "https://i.ytimg.com/vi/ti-GaKY73lU/mqdefault.jpg"}, {"id": "RDiUfnkaNYQ", "title": "【捉弄人的大脑】深度解读｜阿尔贝尔·穆海贝尔", "published": "2026-03-03", "views": 18, "thumbnail": "https://i.ytimg.com/vi/RDiUfnkaNYQ/mqdefault.jpg"}, {"id": "rkxfPoTry40", "title": "【月亮和六便士】我不想谋生，我只想生活。｜威廉·萨默塞特·毛姆", "published": "2026-03-03", "views": 6, "thumbnail": "https://i.ytimg.com/vi/rkxfPoTry40/mqdefault.jpg"}, {"id": "Z1BRH7c0g5I", "title": "【道德经】深度解读｜老子", "published": "2026-03-03", "views": 11, "thumbnail": "https://i.ytimg.com/vi/Z1BRH7c0g5I/mqdefault.jpg"}, {"id": "ELI_2s1jfTQ", "title": "【卓有成效的管理者】在知识经济时代，每一个动脑思考的人，都是管理者。｜彼得·德鲁克", "published": "2026-03-03", "views": 10, "thumbnail": "https://i.ytimg.com/vi/ELI_2s1jfTQ/mqdefault.jpg"}, {"id": "XZb2a9X18xc", "title": "【罗生门】深度解读｜芥川龙之介", "published": "2026-03-03", "views": 21, "thumbnail": "https://i.ytimg.com/vi/XZb2a9X18xc/mqdefault.jpg"}, {"id": "Owziqg8ZDII", "title": "【史记·刺客列传】深度解读｜司马迁", "published": "2026-03-02", "views": 22, "thumbnail": "https://i.ytimg.com/vi/Owziqg8ZDII/mqdefault.jpg"}, {"id": "oC_QJhbjSxo", "title": "【中国儒学三千年】山东是华夏儿女心中的圣城所在｜马勇", "published": "2026-03-02", "views": 7, "thumbnail": "https://i.ytimg.com/vi/oC_QJhbjSxo/mqdefault.jpg"}, {"id": "xQiLCVI7Vto", "title": "【社会契约论】人是生而自由的，但却无往不在枷锁之中。｜让-雅克·卢梭", "published": "2026-03-02", "views": 18, "thumbnail": "https://i.ytimg.com/vi/xQiLCVI7Vto/mqdefault.jpg"}, {"id": "9WHz2R3rxGk", "title": "【中国文化的精神】深度解读｜许倬云", "published": "2026-03-02", "views": 9, "thumbnail": "https://i.ytimg.com/vi/9WHz2R3rxGk/mqdefault.jpg"}, {"id": "29Ooo8CoRzA", "title": "【人类简史】地球曾是多种人类共存的“中土世界”｜尤瓦尔·赫拉利", "published": "2026-03-02", "views": 44, "thumbnail": "https://i.ytimg.com/vi/29Ooo8CoRzA/mqdefault.jpg"}];
+
+const techKeywords = ['OpenClaw', 'AI NEWS', 'Agentic'];
+const isTech = v => techKeywords.some(k => v.title.includes(k));
+
+const books = VIDEOS.filter(v => !isTech(v));
+const tech = VIDEOS.filter(v => isTech(v));
+
+// Categories for books
+const categories = {
+  '全部': () => true,
+  '哲学思想': v => /道德经|论自由|康德|苏菲|社会契约|有限与无限|悉达多|佛学/.test(v.title),
+  '心理认知': v => /思考.*快|刻意练习|思维的囚徒|捉弄|好奇心|认知|大脑|不安的哲学|随他们去/.test(v.title),
+  '财富商业': v => /财富|穷查理|伯克希尔|巴菲特|低利率|一如既往|稻盛|管理者/.test(v.title),
+  '历史人文': v => /人类简史|未来简史|智人|枪炮|帝国|史记|五代|儒学|文化|东京|社会契约|菊与刀|繁荣与停滞/.test(v.title),
+  '自我提升': v => /如何找到|出类拔萃|能力陷阱|反脆弱|穿越风暴|被讨厌|幸福的勇气|第三个千年/.test(v.title),
+  '文学传记': v => /月亮|面纱|罗生门|乔布斯|爱因斯坦|达芬奇|比尔盖茨|坂本|厌女|年轻人的国文|岳飞|黑塞|年轻人.*冷酷|eurotrash|paradise|strange.*death|解惑|世界观|机械宇宙/.test(v.title),
+  '合集推荐': v => /3本书|三部曲|三板斧|三重密码|方法论/.test(v.title),
+};
+
+// Stats
+document.getElementById('stats').innerHTML = `
+  <div class="stat-item"><div class="stat-num">${books.length}</div><div class="stat-label">书 籍 解 读</div></div>
+  <div class="stat-item"><div class="stat-num">${tech.length}</div><div class="stat-label">A I 教 程</div></div>
+  <div class="stat-item"><div class="stat-num">${VIDEOS.length}</div><div class="stat-label">视 频 总 数</div></div>
+`;
+
+function renderCards(container, videos) {
+  container.innerHTML = videos.map((v, i) => `
+    <a class="video-card reveal" href="https://www.youtube.com/watch?v=${v.id}" target="_blank" rel="noopener" style="transition-delay: ${Math.min(i * 0.05, 0.6)}s">
+      <div class="video-thumb">
+        <img src="${v.thumbnail}" alt="${v.title.replace(/"/g, '&quot;')}" loading="lazy">
+        <div class="play-overlay"><div class="play-icon"></div></div>
+      </div>
+      <div class="video-info">
+        <div class="video-title">${v.title.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</div>
+        <div class="video-meta">
+          <span class="video-date">${v.published}</span>
+          <span class="video-views">${v.views}</span>
+        </div>
+      </div>
+    </a>
+  `).join('');
+  observeReveal();
+}
+
+// Book filters
+const filterBar = document.getElementById('bookFilters');
+Object.keys(categories).forEach((cat, i) => {
+  const btn = document.createElement('button');
+  btn.className = 'filter-btn' + (i === 0 ? ' active' : '');
+  btn.textContent = cat;
+  btn.onclick = () => {
+    filterBar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filtered = books.filter(categories[cat]);
+    renderCards(document.getElementById('bookGrid'), filtered);
+  };
+  filterBar.appendChild(btn);
+});
+
+renderCards(document.getElementById('bookGrid'), books);
+renderCards(document.getElementById('techGrid'), tech);
+
+// Scroll reveal
+function observeReveal() {
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal:not(.visible)').forEach(el => obs.observe(el));
+}
+observeReveal();
+</script>
 
 </body>
 </html>
