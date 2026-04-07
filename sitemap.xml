@@ -2,9 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://readsightact.github.io/</loc>
-    <lastmod>2026-04-06T01:01:46+00:00</lastmod>
+    <lastmod>2026-04-07T01:01:51+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.youtube.com/watch?v=ExvV0w5q29A</loc>
+    <lastmod>2026-04-07T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.youtube.com/watch?v=ckpv9DXq_iI</loc>
+    <lastmod>2026-04-06T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.youtube.com/watch?v=HLMlT_hjk5Q</loc>
@@ -295,12 +307,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.youtube.com/watch?v=bjx0cNHwJNg</loc>
-    <lastmod>2026-03-30T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.youtube.com/watch?v=Mz3DTgxCL58</loc>
     <lastmod>2026-03-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -326,6 +332,12 @@
   </url>
   <url>
     <loc>https://www.youtube.com/watch?v=xlMO1Ta_ZOo</loc>
+    <lastmod>2026-03-25T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.youtube.com/watch?v=bz2eDy2RpQ4</loc>
     <lastmod>2026-03-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -392,12 +404,6 @@
   </url>
   <url>
     <loc>https://www.youtube.com/watch?v=iAnoCYZVRUc</loc>
-    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.youtube.com/watch?v=ckpv9DXq_iI</loc>
     <lastmod>2026-03-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
